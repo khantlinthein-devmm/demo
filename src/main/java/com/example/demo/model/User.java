@@ -27,7 +27,7 @@ public class User {
     private String gender;
     private Integer age;
 
-    private String avatar; // image path or URL
+    private String avatarPath; // image path or URL
     private String bio;
 
     // Getters and Setters
@@ -97,11 +97,11 @@ public class User {
     }
 
     public String getAvatar() {
-        return avatar;
+        return avatarPath;
     }
 
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
+    public void setAvatar(String avatarPath) {
+        this.avatarPath = avatarPath;
     }
 
     public String getBio() {
