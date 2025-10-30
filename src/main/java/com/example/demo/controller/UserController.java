@@ -55,8 +55,13 @@ public class UserController {
     public String updateProfile(@ModelAttribute User form, Principal principal) {
         User user = repo.findByEmail(principal.getName()).orElseThrow();
         user.setName(form.getName());
-        user.setBio(form.getBio());
+        user.setEmail(form.getEmail());
+        user.setPhone(form.getPhone());
+        user.setGender(form.getGender());
+        user.setAge(form.getAge());
+        user.setRole(form.getRole());
         user.setAvatar(form.getAvatar());
+        user.setBio(form.getBio());
         repo.save(user);
         return "redirect:/profile";
     }

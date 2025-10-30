@@ -22,8 +22,12 @@ public class User {
     @NotEmpty
     private String password;
 
-    private String avatar; // image path or URL
+    private String phone;
+    private String role;
+    private String gender;
+    private Integer age;
 
+    private String avatar; // image path or URL
     private String bio;
 
     // Getters and Setters
@@ -58,6 +62,38 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     public String getAvatar() {
